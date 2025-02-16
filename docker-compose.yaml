@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ddns-updater:
+    image: mrorbitman/cloudflare-ddns-helper:latest
+    environment:
+      - CLOUDFLARE_EMAIL=${CLOUDFLARE_EMAIL}
+      - CLOUDFLARE_API_KEY=${CLOUDFLARE_API_KEY}
+      - DOMAIN_NAME=${DOMAIN_NAME}
+      - RECORD_NAMES=${RECORD_NAMES}
+    restart: unless-stopped
