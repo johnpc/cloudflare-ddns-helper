@@ -1,0 +1,20 @@
+# Use Node.js base image
+FROM node:18-alpine
+
+# Create app directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Install ts-node globally
+RUN npm install -g ts-node
+
+# Copy source code
+COPY . .
+
+# Run the script once and exit
+CMD ["npx", "tsx", "index.ts"]
