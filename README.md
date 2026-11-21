@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> **Archived — November 2026.** This project is no longer maintained and the repository is read-only.
+> It still works as published, but there will be no further releases or issue responses.
+
 # Cloudflare DDNS Helper
 
 A lightweight Docker container that automatically updates Cloudflare DNS records with your current public IP address. Perfect for home labs, self-hosted services, or any scenario where you need dynamic DNS updating with Cloudflare.
